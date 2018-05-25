@@ -1,0 +1,5 @@
+{
+	"env":{
+	   "REST_API_PASSWORD": "rest_api_node"
+	}
+}
