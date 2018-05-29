@@ -10,7 +10,6 @@ Using Node.js to build Restful Api
 
 ## how to run:
  * Open command line and input: 
-""" 
+
    npm start
 
-"""
