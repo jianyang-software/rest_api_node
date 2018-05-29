@@ -10,8 +10,11 @@ const mongoose = require('mongoose');
 const productsRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 
+//connectng to database
 mongoose.connect('mongodb+srv://yangjian1:'+process.env.REST_API_PASSWORD+'@rest-api-node-lxt5i.mongodb.net/test?retryWrites=true');
+mongoose.Promise = global.Promise;
 
+//use middleware
 app.use(morgan('dev')); //will call next the execute following
 
 app.use(bodyParser.urlencoded({extended: false})); //only support simple 
